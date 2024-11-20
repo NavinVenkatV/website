@@ -82,7 +82,7 @@ export function Contact() {
   };
 
   return (
-    <div className="w-[400px] md:w-[800px]  mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black" id="contact">
+    <div className="w-[350px] md:w-[800px]  mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black" id="contact">
       <h2 className="font-bold text-2xl md:text-4xl text-neutral-800 dark:text-neutral-200 text-center">
         You know the Business and <span className="text-green-800">I know the Chemistry</span>
       </h2>
