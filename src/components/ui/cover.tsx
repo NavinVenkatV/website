@@ -201,9 +201,9 @@ export const Beam = ({
             repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : delay ?? 1,
           }}
         >
-          <stop ="#2EB9DF" stopOpacity="0" />
-          <stop ="#3b82f6" />
-          <stop offset="1" ="#3b82f6" stopOpacity="0" />
+          <stop r="#2EB9DF" stopOpacity="0" />
+          <stop r="#3b82f6" />
+          <stop offset="1" r="#3b82f6" stopOpacity="0" />
         </motion.linearGradient>
       </defs>
     </motion.svg>
@@ -212,6 +212,7 @@ export const Beam = ({
 
 export const CircleIcon = ({
   className,
+  delay,
 }: {
   className?: string;
   delay?: number;
