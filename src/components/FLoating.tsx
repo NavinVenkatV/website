@@ -43,7 +43,7 @@ export function Floating() {
           alt="Aceternity Logo"
         />
       ),
-      href: "linkedin.com/in/navin-venkat-38bb28279",
+      href: "https://www.linkedin.com/in/navin-venkat-38bb28279/",
     },
     {
       title: "Contact",
