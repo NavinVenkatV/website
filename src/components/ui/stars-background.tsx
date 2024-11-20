@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import { cn } from "@/lib/utils";
 import React, {
   useState,
@@ -86,11 +87,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
       resizeObserver.observe(canvasRef.current);
     }
 
-    return () => {
-      if (canvasRef.current) {
-        resizeObserver.unobserve(canvasRef.current);
-      }
-    };
+    
   }, [
     starDensity,
     allStarsTwinkle,
