@@ -20,7 +20,7 @@ const Hero = () => {
           Navin Venkat <br /> Passionate Web <Cover>Developer</Cover>
         </h2>
         <br />
-        <a href="#" className="text-white border-b border-1 hover:p-[10px] hover:bg-[#5070ff2f] transition-all ease-in-out py-[10px] mr-auto font-[600]">
+        <a href="#contact" className="text-white border-b border-1 hover:p-[10px] hover:bg-[#5070ff2f] transition-all ease-in-out py-[10px] mr-auto font-[600]">
           Hire Me &rarr;
         </a>
         <div className="mt-[20px] flex flex-start">
