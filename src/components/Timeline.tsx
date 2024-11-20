@@ -13,7 +13,7 @@ export function TimelineDemo() {
               <Cover className="text-3xl font-bold p-2">Freelancing</Cover>
             </div>
             <span className="text-blue-400 p-2">2024</span>
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">I&apos;ve successfully completed multiple React and Next.js projects for two clients, delivering high-quality, responsive web applications, and I'm eager to take on new and exciting opportunities.</h4>
+            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">I&apos;ve successfully completed multiple React and Next.js projects for two clients, delivering high-quality, responsive web applications, and I&apos;m eager to take on new and exciting opportunities.</h4>
           </div>
           <div>
             <div>
