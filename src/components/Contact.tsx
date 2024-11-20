@@ -4,11 +4,6 @@ import React from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/lib/utils";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
 
 export function Contact() {
 
@@ -16,7 +11,7 @@ export function Contact() {
     firstname : "",
     lastname : "",
     email : "",
-    message : ""
+    message: ""
   })
 
   const[loadingMessage,setloadingMessage] = useState({
@@ -25,7 +20,7 @@ export function Contact() {
     success:false
   })
 
-  const handleChange = (e:any)=>{
+  const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
     const {name,value} = e.target
     setformData((prevData)=>({...prevData, [name]:value}))
   }
@@ -39,7 +34,6 @@ export function Contact() {
           message:"Please fill all the details!",
           success:false
         })
-        return;
         const datas = {
           name : `${formData?.firstname} ${formData.lastname}`,
           email : formData?.email,
@@ -122,7 +116,7 @@ export function Contact() {
           type="submit"
         >
           {/* {!loadingMessage.loading ? "SUbmit" : "....."} */}
-          Let's do &rarr;
+          Let&apos;s do &rarr;
           <BottomGradient />
         </button>
 

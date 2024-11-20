@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer"
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextApiRequest} from 'next';
 
 
 const transporter = nodemailer.createTransport({
@@ -11,9 +11,9 @@ const transporter = nodemailer.createTransport({
     }
 })
 
-export async function POST(request: any) {
+export async function POST(request: NextApiRequest) {
     try {
-        const [name, email, message] = await request.json
+        const [name, email, message] = await request.body
 
         if (!name || !email || !message)
             return NextResponse.json(

@@ -44,7 +44,7 @@ const Hero = () => {
         About me
       </h2>
       <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-start mt-[20px]">
-      I am a proactive software developer with expertise in front-end development and experience in full-stack projects. My skills span across technologies like React.js, Next.js, and the MERN stack, where I excel at creating dynamic and scalable web applications. I've successfully delivered solutions from wallet apps to video platforms, always focusing on optimal user experience and performance. I leverage my background in Data Structures and Algorithms (DSA) to craft efficient, robust code. As a freelancer, I thrive on turning client visions into engaging, interactive websites
+      I am a proactive software developer with expertise in front-end development and experience in full-stack projects. My skills span across technologies like React.js, Next.js, and the MERN stack, where I excel at creating dynamic and scalable web applications. I&apos;ve successfully delivered solutions from wallet apps to video platforms, always focusing on optimal user experience and performance. I leverage my background in Data Structures and Algorithms (DSA) to craft efficient, robust code. As a freelancer, I thrive on turning client visions into engaging, interactive websites
       </p>
       <Skills/>
 

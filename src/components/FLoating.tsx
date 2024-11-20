@@ -3,10 +3,8 @@ import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
   IconBrandX,
-  IconExchange,
   IconHome,
   IconNewSection,
-  IconTerminal2,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { MailIcon, Settings2Icon } from "lucide-react";
