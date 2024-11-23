@@ -39,10 +39,10 @@ const Hero = () => {
     </div>
 
     <div className="w-[90%] mx-auto py-[30px] flex flex-col items-center z-2">
-      <a href="https://drive.google.com/file/d/1qyW6j0rh2nRE7z8h_rW10QEg1Mg-8lNl/view" className="border border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[2px] border-white hover:bg-[#5070ff2f] ">
+      <a href="https://drive.google.com/file/d/1qyW6j0rh2nRE7z8h_rW10QEg1Mg-8lNl/view" className="border border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[1px] border-white hover:bg-[#5070ff2f] ">
         Resume
       </a>
-      <h2 className="bg-clip-text mt-[50px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-2xl lg:text-3xl font-sans relative z-20 font-bold tracking-tight">
+      <h2 className="bg-clip-text mt-[20px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-2xl lg:text-3xl font-sans relative z-20 font-bold tracking-tight">
         About me
       </h2>
       <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-start mt-[20px]">

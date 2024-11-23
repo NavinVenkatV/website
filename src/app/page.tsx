@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import { Services } from "@/components/Services";
+import Skills from "@/components/Skills";
 import { TimelineDemo } from "@/components/Timeline";
 import { Cover } from "@/components/ui/cover";
 
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Floating/>
       <Hero/>
+      <Skills/>
       <div className="flex flex-col justify-center items-center p-5">  
         <div className="mt-20" id="services">       
            <Cover className="text-3xl md:text-5xl font-bold">Our Services</Cover>
