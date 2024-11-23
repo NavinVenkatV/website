@@ -8,14 +8,14 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen overflow-x-hidden grid lg:grid-cols-[1fr_0.6fr_0.4fr] gap-[20px]">
+    <div className="w-full min-h-screen overflow-x-hidden grid lg:grid-cols-[1fr_0.6fr_0.5fr] gap-[20px]">
 
     <div className="max-w-[600px] w-[90%] mx-auto py-[30px]">
-      <a href="">
-        <Image src="/image.png" alt="logo" width={200} height={200} className=" object-contain object-center"/>
+      <a href="/">
+        <Image src="/image.png" alt="logo" width={100} height={100} className="mb-5 object-contain object-center"/>
       </a>
       <div  className="flex flex-col justify-center h-[80%] ">
-        <span className="text-[#4e69e0]">It&apos; me</span>
+        <span className="md:pl-2 text-[#4e69e0]">It&apos; me</span>
         <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans relative z-20 font-bold tracking-tight">
           Navin Venkat <br /> Passionate Web <Cover>Developer</Cover>
         </h2>
@@ -32,8 +32,10 @@ const Hero = () => {
       </div>
     </div>
 
-    <div className="md:pt-20">
-      <Image src="/west.jpeg" alt="" width={800} height={1200} className="w-full max-h-[90vh] object-contain object-bottom"/>
+    <div className="mt-5">
+      <Image src="/p9.webp" alt="" width={800} height={1200} className="w-full max-h-[90vh] object-contain object-bottom"/>
+      <span className='text-center flex justify-center text-white px-5'><i>“People don&apos;t care about what you say, they care about what you build.”</i></span>
+
     </div>
 
     <div className="w-[90%] mx-auto py-[30px] flex flex-col items-center z-2">
