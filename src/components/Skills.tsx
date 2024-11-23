@@ -8,7 +8,7 @@ const Skills = () => {
                 Skills & Technologies
 
             </h2>
-            <div className='px-10 py-20 flex justify-center text-center'>
+            <div className='px-10 py-19 flex justify-center text-center'>
                 <a href="https://skillicons.dev">
                     <img  width={1400} height={1400} src="https://skillicons.dev/icons?i=c,cpp,javascript,typescript,python,mongodb,mysql,postgresql,prisma,expressjs,react,redux,nodejs,nextjs,html,css,tailwind,docker,git,github,cloudflare,aws,figma,vite,linux,postman,npm,vscode" />
                 </a>
