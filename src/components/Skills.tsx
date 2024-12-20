@@ -3,18 +3,22 @@ import { Cover } from './ui/cover'
 
 const Skills = () => {
     return (
-        <div className='transition ease-in-out'>
-            <h2 className="flex justify-center items-center text-center mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-                Skills & Technologies
-
-            </h2>
-            <div className='px-10 py-19 flex justify-center text-center'>
-                <a href="https://skillicons.dev">
-                    <img  width={1400} height={1400} src="https://skillicons.dev/icons?i=c,cpp,javascript,typescript,python,mongodb,mysql,postgresql,prisma,expressjs,react,redux,nodejs,nextjs,html,css,tailwind,docker,git,github,cloudflare,aws,figma,vite,linux,postman,npm,vscode" />
-                </a>
+        <div className="flex flex-col items-center justify-center text-white w-full">
+            <div>
+                <Cover className="text-3xl md:text-5xl font-bold">Skills & Technologies</Cover>
             </div>
-
+            <div className="w-full flex justify-center items-center mt-10 mx-auto px-4">
+                <img
+                    width={1400}
+                    height={1400}
+                    src="https://skillicons.dev/icons?i=c,cpp,javascript,typescript,python,mongodb,mysql,postgresql,prisma,expressjs,react,redux,nodejs,nextjs,html,css,tailwind,docker,git,github,cloudflare,aws,figma,vite,linux,postman,npm,vscode"
+                    alt="Skills and Technologies Icons"
+                    className="w-full min-w-[80%] h-auto"
+                    loading="lazy"
+                />
+            </div>
         </div>
+
     )
 }
 
