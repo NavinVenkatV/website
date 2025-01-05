@@ -17,9 +17,9 @@ export function TimelineDemo() {
           </div>
           <div>
             <div>
-              <Cover className="text-3xl font-bold p-2">Web Developer at Stunmonk</Cover>
+              <Cover className="text-3xl font-bold p-2">Web Developer at Stumonk</Cover>
             </div>
-            <span className="text-blue-400 p-2">Feb-July (2024)</span>
+            <span className="text-blue-500 p-2">Feb-July (2024)</span>
             <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">During my internship, I developed a Full Stack Web Application, focusing on both frontend
               and backend development using the MERN stack (MongoDB, Express.js, React.js, and
               Node.js). This experience enhanced my skills in creating seamless user interfaces and robust
@@ -44,7 +44,7 @@ export function TimelineDemo() {
             <div>
               <Cover className="text-3xl font-bold p-2">AHSS (Py)</Cover>
             </div>
-            <span className="text-blue-400 p-2">2020</span>
+            <span className="text-blue-500 p-2">2020</span>
             <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">Higher Secondary - 80.3%</h4>
           </div>
         </div>
@@ -58,7 +58,7 @@ export function TimelineDemo() {
             <div>
               <Cover className="text-3xl font-bold p-2">Keyboardist</Cover>
             </div>
-            <span className="text-blue-400 p-2">2024</span>
+            <span className="text-blue-500 p-2">2024</span>
             <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">Secured first class distinction in Electronic Keyboard of Trinity College London (grade 4)</h4>
           </div>
         </div>
