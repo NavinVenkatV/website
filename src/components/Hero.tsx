@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { Cover } from "@/components/ui/cover";
@@ -5,11 +6,16 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { people } from '@/data/people';
 import Image from 'next/image';
+import {motion} from 'framer-motion'
 
 const Hero = () => {
   return (
     <div className="w-full min-h-screen overflow-x-hidden grid lg:grid-cols-[1fr_0.6fr_0.5fr] gap-[20px]">
 
+    <motion.div
+    initial={{opacity:0, x:-20}}
+    animate={{opacity:1, x:0}}
+    transition={{duration:0.5}}>
     <div className="max-w-[600px] w-[90%] mx-auto py-[30px]">
       <a href="/">
         <Image src="/image.png" alt="logo" width={100} height={100} className="mb-5 object-contain object-center"/>
@@ -30,13 +36,23 @@ const Hero = () => {
         </h2>
       </div>
     </div>
+    </motion.div>
 
+    <motion.div
+    initial={{opacity:0, y:-20}}
+    animate={{opacity:1, y:0}}
+    transition={{duration:0.5}}>
     <div className="mt-5">
       <Image src="/p9.webp" alt="" width={800} height={1200} className="w-full max-h-[90vh] object-contain object-bottom"/>
       <span className='text-center flex justify-center text-white px-5'><i>“People don&apos;t care about what you say, they care about what you build.”</i></span>
 
     </div>
+    </motion.div>
 
+    <motion.div
+    initial={{opacity:0, x:20}}
+    animate={{opacity:1, x:0}}
+    transition={{duration:0.5}}>
     <div className="w-[90%] mx-auto py-[30px] flex flex-col items-center z-2">
       <a href="https://drive.google.com/file/d/1G1bNQP3vCyvgQrmrxM_4tGLH92WYXz9K/view?usp=drivesdk " className="border border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[1px] border-white hover:bg-[#5070ff2f] ">
         Resume
@@ -53,6 +69,7 @@ const Hero = () => {
       <StarsBackground className="z-[-1]"/>
 
     </div>
+    </motion.div>
 
   </div>
   )
