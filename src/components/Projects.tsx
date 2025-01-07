@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import ProjectContents from "./ui/projectContents";
 
 export function Projects() {
   const cards = data.map((card, index) => (
@@ -18,74 +18,43 @@ export function Projects() {
   );
 }
 
-const DummyContent = () => {
-  return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <Image
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
-    </>
-  );
-};
-
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "NOAH",
+    title: "Enhance your buisness with us",
+    src: "/p1.png",
+    content: <ProjectContents title={` N O A H - A highly responsive and interactive website.`} src="/noah.png"
+      description={`My personal project N O A H, a highly responsive and interactive website built using Next.js, Typescript, Tailwind CSS, Framer Motion, GSAP, Aceternity UI, and PostgreSQL. The project is designed to offer seamless web development services with smooth animations, modern UI/UX, and robust backend integration.`} />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Space X Beta",
+    title: "Lost in the stars, found in the universe",
+    src: "/po2.png",
+    content: <ProjectContents src="/x.png" title={"Lost in the stars, found in the universe."} description={"SpaceXHub is a web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and styled with Tailwind CSS. Currently in its initial stage, the project aims to serve as a hub for space exploration enthusiasts. Future updates will include real-time weather updates and global climate change insights to enhance its functionality and user engagement."} />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Portfolio",
+    title: "Explore more about my Journey",
+    src: "/po3.png",
+    content: <ProjectContents src="/po4.png" title="Portfolio" description="A showcase of innovative projects, problem-solving expertise, and a passion for creating impactful digital experiences." />,
   },
 
   {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Understanding Blockchain",
+    title: "Blockchain is not just the foundation of cryptocurrency",
+    src: "/bl.webp",
+    content: <ProjectContents src="/bl.webp" title="Understanding Blockchain" description="Blockchain is not just the foundation of cryptocurrency; it’s a transformative technology that can revolutionize industries. This blog will provide an easy-to-understand introduction to blockchain technology, its structure, how it works, and the wide range of applications it powers beyond digital currencies." />
   },
   {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Zendaya",
+    title: "Beauty of Zendaya",
+    src  : "/z2.jpeg",
+    content: <ProjectContents src="/z.jpg" title="Beauty of Zendaya" description="Zendaya is an American actress, singer, and fashion icon known for her versatile career in the entertainment industry. She gained widespread recognition for her role as MJ in the *Spider-Man* Marvel films and for starring in the HBO series *Euphoria*, where her portrayal of Rue Bennett earned her critical acclaim and multiple awards, including an Emmy. Zendaya began her career in the early 2010s with Disney Channel's *Shake It Up*, where she showcased her dancing and acting talent.Beyond acting, Zendaya is also a prominent figure in the fashion world, admired for her bold and elegant style. She has also ventured into music, releasing singles and contributing to soundtracks for films and shows. Zendaya uses her platform to advocate for social justice issues, including racial equality and mental health awareness. She is celebrated for being a role model, inspiring young people with her talent, activism, and empowering messages."/>
   },
-  {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
-  },
+  // {
+  //   category: "Hiring",
+  //   title: "Hiring for a Staff Software Engineer",
+  //   src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   content: <ProjectContents />,
+  // },
 ];

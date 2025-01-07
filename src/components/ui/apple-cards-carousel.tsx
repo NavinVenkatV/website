@@ -260,7 +260,7 @@ export const Card = ({
           src={card.src}
           alt={card.title}
           fill
-          className="object-cover absolute z-10 inset-0"
+          className="object-cover absolute z-10 inset-0" style={{filter : 'blur(3px)'}}
         />
       </motion.button>
     </>
