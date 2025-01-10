@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export async function POST(request: any) {
+export async function POST(request: NextRequest) {
   try {
     console.log("Entered api")
     // Parse the request body as JSON
