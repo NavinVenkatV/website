@@ -21,7 +21,7 @@ export function Projects() {
 const data = [
   {
     category: "NOAH",
-    title: "Enhance your buisness with us",
+    title: "Enhance your business with us",
     src: "/p1.png",
     content: <ProjectContents navigate="https://noahdevs.vercel.app/" title={` N O A H - A highly responsive and interactive website.`} src="/noah.png"
       description={`My personal project N O A H, a highly responsive and interactive website built using Next.js, Typescript, Tailwind CSS, Framer Motion, GSAP, Aceternity UI, and PostgreSQL. The project is designed to offer seamless web development services with smooth animations, modern UI/UX, and robust backend integration.`} />,
