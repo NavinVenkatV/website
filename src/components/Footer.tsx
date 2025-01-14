@@ -9,7 +9,7 @@ const Footer = () => {
         <span className='text-sm text-gray-500'>Website is under development*</span>
       </a>
       <span className='text-[0.9rem] font-[500] text-[#9e9e9e]'>
-        © 2024 Navin Venkat. All rights reserved.
+        © 2025 Developed by Navin Venkat. All rights reserved.
       </span>
       
     </div>
