@@ -13,8 +13,8 @@ const Hero = () => {
     <div className="w-full min-h-screen overflow-x-hidden grid lg:grid-cols-[1fr_0.6fr_0.5fr] gap-[20px]">
 
     <motion.div
-    initial={{opacity:0, x:-20}}
-    animate={{opacity:1, x:0}}
+    initial={{opacity:0, x:-50}}
+    whileInView={{opacity:1, x:0}}
     transition={{duration:0.5}}>
     <div className="max-w-[600px] w-[90%] mx-auto py-[30px]">
       <a href="/">

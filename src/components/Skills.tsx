@@ -22,9 +22,8 @@ const Skills = () => {
                     <motion.div
                         key={skill}
                         initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        whileHover={{ scale: 1.1 }}
                         className="flex items-center justify-center p-2 rounded-lg shadow-lg"
                     >
                         <img
