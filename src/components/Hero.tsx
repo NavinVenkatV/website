@@ -54,7 +54,7 @@ const Hero = () => {
     animate={{opacity:1, x:0}}
     transition={{duration:0.5}}>
     <div className="w-[90%] mx-auto py-[30px] flex flex-col items-center z-2">
-      <a href="https://drive.google.com/file/d/1G1bNQP3vCyvgQrmrxM_4tGLH92WYXz9K/view?usp=drivesdk " className="border border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[1px] border-white hover:bg-[#5070ff2f] ">
+      <a href="https://drive.google.com/file/d/1xyXRoukAaiGssy8e_0bPArLtL5r0vCPl/view" className="border border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[1px] border-white hover:bg-[#5070ff2f] ">
         Resume
       </a>
       <h2 className="bg-clip-text mt-[20px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-2xl lg:text-3xl font-sans relative z-20 font-bold tracking-tight">

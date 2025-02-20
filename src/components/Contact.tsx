@@ -4,6 +4,7 @@ import React from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/lib/utils";
+import {motion} from "framer-motion"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -94,12 +95,20 @@ export function Contact() {
 
   return (
     <div className="w-[350px] md:w-[800px] mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black" id="contact">
-      <h2 className="font-bold text-2xl md:text-4xl text-neutral-800 dark:text-neutral-200 text-center">
+      <motion.h2
+      initial={{opacity : 0, x:-50}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:0.5}}
+       className="font-bold text-2xl md:text-4xl text-neutral-800 dark:text-neutral-200 text-center">
         You know the Business and <span className="text-green-800">I know the Chemistry</span>
-      </h2>
-      <p className="text-neutral-600 text-sm mt-2 dark:text-neutral-300 text-center">
+      </motion.h2>
+      <motion.p
+      initial={{opacity : 0, x:50}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:0.5}}
+       className="text-neutral-600 text-sm mt-2 dark:text-neutral-300 text-center">
         Maybe You and I could partner up
-      </p>
+      </motion.p>
       {loadingMessage.message && <p className={`mt-[20px] text-center text-[0.9rem] ${loadingMessage.success ? "text-green-400" : "text-red-400"}`}>{loadingMessage.message}</p>}
       <form className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">

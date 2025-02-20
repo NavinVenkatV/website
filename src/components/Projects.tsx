@@ -2,6 +2,7 @@
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import ProjectContents from "./ui/projectContents";
+import {motion} from "framer-motion"
 
 export function Projects() {
   const cards = data.map((card, index) => (
@@ -10,9 +11,13 @@ export function Projects() {
 
   return (
     <div className="w-full h-full py-20" id="projects">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+      <motion.h2
+      initial={{opacity : 0, x:50}}
+      whileInView={{opacity : 1, x:0}}
+      transition={{duration : 0.5, ease:"easeIn"}}
+       className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Recent Projects & Blogs
-      </h2>
+      </motion.h2>
       <Carousel items={cards} />
     </div>
   );
@@ -20,10 +25,33 @@ export function Projects() {
 
 const data = [
   {
+    category: "pingMe",
+    title: "Real time website monitoring solution.",
+    src: "/pingME_mobile.png",
+    content: <ProjectContents navigate="https://pingmeyourwebsite.vercel.app/" title={`PingMe is a tool that helps you monitor your website and get notified when it goes down.`} src="/pingMe_pc.png"
+      description={`Developed PingMe, a SaaS platform for website monitoring, providing real-time performance and uptime tracking for websites.
+ Implemented features for users to monitor multiple websites, track downtime, and get instant alerts on performance issues.
+ Built the front-end with Next.js and styled the platform using Tailwind CSS for a clean and responsive UI.
+ Utilized NextAuth for secure user authentication and management, providing a personalized user experience.
+ Used Prisma and PostgreSQL to handle efficient data management and storage in the backend.
+ Integrated Framer Motion for smooth animations and transitions to enhance user interaction and experience.`} />,
+  },
+  {
+    category: "DigixLabs",
+    title: "Building the Future of Technical Content.",
+    src: "/digix_mobile.png",
+    content: <ProjectContents navigate="https://digix-labs.vercel.app/" title={`Technical expertise, viral content,and growth strategies, all in one place.`} src="/digix_pc.png"
+      description={`Developed a SaaS platform tailored for technical content creators, offering marketing, website creation, and innovative project ideas.
+ Built an engaging and dynamic user interface using Framer Motion and GSAP for animations and interactions.
+ Integrated user authentication and management with Next Auth to ensure secure access and seamless user onboarding.
+ Utilized Prisma and PostgreSQL for efficient data handling and storage, ensuring a scalable backend architecture.
+ Implemented advanced content management tools to help creators streamline their workflows and reach broader audiences.`} />,
+  },
+  {
     category: "NOAH",
     title: "Enhance your business with us",
     src: "/p1.png",
-    content: <ProjectContents navigate="https://noahdevs.vercel.app/" title={` N O A H - A highly responsive and interactive website.`} src="/noah.png"
+    content: <ProjectContents navigate="https://noahdevs.vercel.app/" title={`N O A H - A highly reponsive and interactive website.`} src="/noah.png"
       description={`My personal project N O A H, a highly responsive and interactive website built using Next.js, Typescript, Tailwind CSS, Framer Motion, GSAP, Aceternity UI, and PostgreSQL. The project is designed to offer seamless web development services with smooth animations, modern UI/UX, and robust backend integration.`} />,
   },
   {

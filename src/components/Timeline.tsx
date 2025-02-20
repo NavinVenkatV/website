@@ -10,6 +10,14 @@ export function TimelineDemo() {
         <div className="flex flex-col gap-[20px]" id="experience">
           <div>
             <div>
+              <Cover className="text-3xl font-bold p-2">Software Developer @AgileSoftLabs</Cover>
+            </div>
+            <span className="text-blue-400 p-2">2025 - Present</span>
+            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">Contributing to both front-end and back-end development for client websites and applications using modern technologies like
+Next.js, React, and Node.js. Developing and maintaining scalable APIs while integrating third-party services to enhance application functionality. Collaborating with cross-functional teams to design and implement robust and user-friendly solutions.</h4>
+          </div>
+          <div>
+            <div>
               <Cover className="text-3xl font-bold p-2">Freelancing</Cover>
             </div>
             <span className="text-blue-400 p-2">2024</span>
