@@ -93,6 +93,8 @@ export function Contact() {
     }
   };
 
+  
+
   return (
     <div className="w-[350px] md:w-[800px] mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black" id="contact">
       <motion.h2
