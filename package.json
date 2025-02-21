@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start_app" : "npm run start"
+    "start_app": "npm run start"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
@@ -21,7 +21,7 @@
     "cobe": "^0.6.3",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.460.0",
-    "next": "14.2.18",
+    "next": "^14.2.18",
     "nodemailer": "^6.9.16",
     "react": "^18",
     "react-dom": "^18",
