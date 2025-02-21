@@ -27,5 +27,6 @@ jobs:
         push: true
         tags: nainvenkat/portfolio:latest
 
+        
     - name: Verify Pushed Image
       run: docker pull nainvenkat/portfolio:latest
