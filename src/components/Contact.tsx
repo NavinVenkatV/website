@@ -51,6 +51,7 @@ export function Contact() {
         message: formData.message
       };
 
+      
       const response = await fetch('/api/route', {
         method: 'POST',
         headers: {
@@ -63,6 +64,7 @@ export function Contact() {
         throw new Error("Network error");
       }
 
+      
       const res = await response.json();
       if (res.message) {
         setFormData({
