@@ -63,6 +63,7 @@ export function Contact() {
         throw new Error("Network error");
       }
 
+      
       const res = await response.json();
       if (res.message) {
         setFormData({
