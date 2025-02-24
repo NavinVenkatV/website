@@ -18,9 +18,9 @@ const Skills = () => {
             <motion.div
             initial={{opacity : 0, x:-50}}
             whileInView={{opacity:1, x:0}}
-            transition={{duration:0.5}}
+            transition={{duration:0.5, ease:"easeInOut"}}
             >
-                <Cover className="text-3xl md:text-5xl font-bold">Skills & Technologies</Cover>
+                <Cover className="text-3xl md:text-5xl text-center w-auto font-bold">Skills & Technologies</Cover>
             </motion.div>
             <div className="w-full flex flex-wrap justify-center items-center mt-10 mx-auto px-4 sm:px-6 gap-4">
                 {skills.map((skill, index) => (

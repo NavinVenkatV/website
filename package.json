@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "start_app": "npm run start"
-    
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
@@ -21,6 +20,7 @@
     "clsx": "^2.1.1",
     "cobe": "^0.6.3",
     "framer-motion": "^11.18.2",
+    "lenis": "^1.1.20",
     "lucide-react": "^0.460.0",
     "next": "^14.2.18",
     "nodemailer": "^6.9.16",

@@ -98,18 +98,18 @@ export function Contact() {
   
 
   return (
-    <div className="w-[350px] md:w-[800px] mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black" id="contact">
+    <div className="w-auto mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black" id="contact">
       <motion.h2
       initial={{opacity : 0, x:-50}}
       whileInView={{opacity:1, x:0}}
-      transition={{duration:0.5}}
+      transition={{duration:0.5, ease:"easeInOut"}}
        className="font-bold text-2xl md:text-4xl text-neutral-800 dark:text-neutral-200 text-center">
         You know the Business and <span className="text-green-800">I know the Chemistry</span>
       </motion.h2>
       <motion.p
       initial={{opacity : 0, x:50}}
       whileInView={{opacity:1, x:0}}
-      transition={{duration:0.5}}
+      transition={{duration:0.5, ease:"easeInOut"}}
        className="text-neutral-600 text-sm mt-2 dark:text-neutral-300 text-center">
         Maybe You and I could partner up
       </motion.p>
