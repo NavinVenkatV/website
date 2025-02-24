@@ -42,5 +42,5 @@ jobs:
             sudo docker pull nainvenkat/portfolio:latest
             sudo docker stop web-app || true
             sudo docker rm web-app || true
-            sudo docker rmi web-app || true
+            sudo docker rmi nainvenkat/portfolio:latest || true
             sudo docker run -d --name web-app -p 3005:3000 nainvenkat/portfolio:latest
