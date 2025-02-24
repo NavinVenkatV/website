@@ -12,6 +12,7 @@ const Skills = () => {
         "figma", "vite", "linux", "postman", "npm", "vscode"
     ];
 
+
     return (
         <div className="flex flex-col items-center justify-center text-white w-full">
             <motion.div
