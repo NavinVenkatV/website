@@ -8,20 +8,10 @@ import { Services } from "@/components/Services";
 import Skills from "@/components/Skills";
 import { TimelineDemo } from "@/components/Timeline";
 import { Cover } from "@/components/ui/cover";
-import Lenis from "lenis";
-import { useEffect } from "react";
+
 
 export default function Home() {
 
-  useEffect(()=>{
-    const lenis = new Lenis();
-    function raf(time : number){
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    
-    requestAnimationFrame(raf)
-  }, [])
 
   return (
     <div className="overflow-hidden px-1">
