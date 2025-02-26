@@ -7,6 +7,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import { people } from '@/data/people';
 import Image from 'next/image';
 import {motion} from 'framer-motion'
+import Time from './Time';
 
 const Hero = () => {
   return (
@@ -19,6 +20,9 @@ const Hero = () => {
     <div className="max-w-[600px] w-[90%] mx-auto py-[30px]">
       <a href="/">
         <Image src="/image.png" alt="logo" width={100} height={100} className="mb-5 object-contain object-center"/>
+        <div className='my-3'>
+          <Time/>
+        </div>
       </a>
       <div  className="flex flex-col justify-center h-[80%] ">
         <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans relative z-20 font-bold tracking-tight">
