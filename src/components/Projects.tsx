@@ -27,7 +27,7 @@ const data = [
   {
     category: "pingMe",
     title: "Real time website monitoring solution.",
-    src: "/pingME_mobile.png",
+    src: "/pingMe.png",
     content: <ProjectContents navigate="https://pingmeyourwebsite.vercel.app/" title={`PingMe is a tool that helps you monitor your website and get notified when it goes down.`} src="/pingMe_pc.png"
       description={`Developed PingMe, a SaaS platform for website monitoring, providing real-time performance and uptime tracking for websites.
  Implemented features for users to monitor multiple websites, track downtime, and get instant alerts on performance issues.
