@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-import { Cover } from "./ui/cover";
+import { GiPointySword } from "react-icons/gi";
 
 export function TimelineDemo() {
   const data = [
@@ -10,29 +10,24 @@ export function TimelineDemo() {
         <div className="flex flex-col gap-[20px]" id="experience">
           <div>
             <div>
-              <Cover className="text-xl md:text-2xl font-bold p-2">Software Developer @AgileSoftLabs</Cover>
+              <span className="text-md md:text-2xl w-full  bg-gradient-to-r bg-clip-text text-transparent from-purple-500 to-blue-500  font-bold ">Software Developer @AgileSoftLabs</span>
             </div>
-            <span className="text-blue-400 p-2">2025 - Present</span>
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">Contributing to both front-end and back-end development for client websites and applications using modern technologies like
-Next.js, React, and Node.js. Developing and maintaining scalable APIs while integrating third-party services to enhance application functionality. Collaborating with cross-functional teams to design and implement robust and user-friendly solutions.</h4>
+            <span className="mt-10 text-white text-xs md:text-sm lg:text-lg">2025 - Present</span>
+            <ul className="text-neutral-800 mt-7 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-2">
+              <li className="flex gap-2"> <GiPointySword/>Interning as a Full-Stack Developer, actively contributing to both frontend and backend development.</li>
+              <li className="flex gap-2"> <GiPointySword/>Integrating RESTful APIs and third-party services to enhance application functionality and ensure seamless data flow.</li>
+              <li className="flex gap-2"> <GiPointySword/>Managing global state using Redux for efficient data handling, improved performance, and better user experience.</li>
+              <li className="flex gap-2"> <GiPointySword/>Implementing Firebase notifications to enable real-time alerts, enhancing user engagement and interactivity.</li>
+              <li className="flex gap-2"> <GiPointySword/>Collaborating with cross-functional teams to develop scalable, high-performance applications while following best coding practices.</li>
+            </ul>
+
           </div>
           <div>
             <div>
-              <Cover className="text-xl md:text-2xl font-bold p-2">Freelancing</Cover>
+              <span className="text-md md:text-2xl  bg-gradient-to-r bg-clip-text text-transparent from-purple-500 to-blue-500 font-bold ">Freelancing</span>
             </div>
-            <span className="text-blue-400 p-2">2024</span>
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">I&apos;ve successfully completed multiple React and Next.js projects for two clients, delivering high-quality, responsive web applications, and I&apos;m eager to take on new and exciting opportunities.</h4>
-          </div>
-          <div>
-            <div>
-              <Cover className="text-xl md:text-2xl font-bold p-2">Web Developer at Stumonk</Cover>
-            </div>
-            <span className="text-blue-500 p-2">Feb-July (2024)</span>
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">During my internship, I developed a Full Stack Web Application, focusing on both frontend
-              and backend development using the MERN stack (MongoDB, Express.js, React.js, and
-              Node.js). This experience enhanced my skills in creating seamless user interfaces and robust
-              server-side functionalities. I collaborated with the web development team to implement best
-              practices and deliver a cohesive application</h4>
+            <span className="text-white text-xs md:text-sm lg:text-lg">2024</span>
+            <h4 className="text-neutral-800 dark:text-neutral-200 mt-7 text-xs md:text-sm font-normal mb-8">I&apos;ve successfully completed multiple React and Next.js projects for two clients, delivering high-quality, responsive web applications, and I&apos;m eager to take on new and exciting opportunities.</h4>
           </div>
         </div>
       ),
@@ -43,31 +38,10 @@ Next.js, React, and Node.js. Developing and maintaining scalable APIs while inte
         <div className="flex flex-col gap-[20px]">
           <div>
             <div>
-              <Cover className="text-xl md:text-2xl font-bold p-2">Puducherry Technological University</Cover>
+              <span className="text-md md:text-2xl  bg-gradient-to-r bg-clip-text text-transparent from-purple-500 to-blue-500 font-bold ">Puducherry Technological University</span>
             </div>
-            <span className="text-blue-400 p-2">2020-2024</span>
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">B.Tech Mechanical Engineering - CGPA-7.9</h4>
-          </div>
-          <div>
-            <div>
-              <Cover className="text-xl md:text-2xl font-bold p-2">AHSS (Py)</Cover>
-            </div>
-            <span className="text-blue-500 p-2">2020</span>
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">Higher Secondary - 80.3%</h4>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Hobby",
-      content: (
-        <div className="flex flex-col gap-[20px]">
-          <div>
-            <div>
-              <Cover className="text-xl md:text-2xl font-bold p-2">Keyboardist</Cover>
-            </div>
-            <span className="text-blue-500 p-2">2024</span>
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">Secured first class distinction in Electronic Keyboard of Trinity College London (grade 4)</h4>
+            <span className="text-white text-xs md:text-sm lg:text-lg">2020-2024</span>
+            <h4 className="text-neutral-800 mt-7 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">B.Tech Mechanical Engineering - CGPA-7.9</h4>
           </div>
         </div>
       ),

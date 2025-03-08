@@ -20,6 +20,8 @@
     "clsx": "^2.1.1",
     "cobe": "^0.6.3",
     "framer-motion": "^11.18.2",
+    "github-calendar": "^2.3.4",
+    "github-contribution-graph": "^2.0.2",
     "lenis": "^1.1.20",
     "lucide-react": "^0.460.0",
     "next": "^14.2.18",

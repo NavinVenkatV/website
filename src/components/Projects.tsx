@@ -15,7 +15,7 @@ export function Projects() {
       initial={{opacity : 0, x:50}}
       whileInView={{opacity : 1, x:0}}
       transition={{duration : 0.5, ease:"easeIn"}}
-       className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+       className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans">
         Recent Projects & Blogs
       </motion.h2>
       <Carousel items={cards} />

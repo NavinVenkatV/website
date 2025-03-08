@@ -1,7 +1,7 @@
 "use client"; // Mark this component as a Client Component
 
 import React from 'react';
-import { Cover } from './ui/cover';
+// import { Cover } from './ui/cover';
 import { motion } from 'framer-motion';
 
 const Skills = () => {
@@ -20,7 +20,7 @@ const Skills = () => {
             whileInView={{opacity:1, x:0}}
             transition={{duration:0.5, ease:"easeInOut"}}
             >
-                <Cover className="text-3xl md:text-5xl text-center w-auto font-bold">Skills & Technologies</Cover>
+                <span className="text-3xl md:text-5xl text-center w-auto bg-clip-text font-bold text-transparent bg-gradient-to-r from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white">Skills & Technologies</span>
             </motion.div>
             <div className="w-full flex flex-wrap justify-center items-center mt-10 mx-auto px-4 sm:px-6 gap-4">
                 {skills.map((skill, index) => (
