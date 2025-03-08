@@ -1,10 +1,7 @@
 "use client"
 import React from 'react'
-import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-import { Cover } from "@/components/ui/cover";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
-import { people } from '@/data/people';
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import Time from './Time';
@@ -49,9 +46,10 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}>
         <div className="mt-5">
-          <Image alt='Loading..' src="/vi.gif" width={1000} height={1200} className="w-full max-h-[90vh] rounded-xl object-contain object-bottom" />
-          <span className='text-center flex justify-center text-white px-5'><i>“People don&apos;t care about what you say, they care about what you build.”</i></span>
-
+          <div className='rounded-xl '>
+            <video muted loop autoPlay src="/auro.mp4" height={1200} className="w-full max-h-[90vh] " />
+          </div>
+          <span className='text-center flex justify-center mt-3 text-white px-5'><i>“People don&apos;t care about what you say, they care about what you build.”</i></span>
         </div>
       </motion.div>
 
@@ -65,10 +63,10 @@ const Hero = () => {
             About me
           </h2>
           <p className="max-w-xl mx-auto text-sm  md:text-lg text-neutral-700 dark:text-neutral-400 mt-[20px]">
-            I'm Navin Venkat V, a 21-year-old Full-Stack Web Developer, Blockchain enthusiast, and Open Source Contributor.
+            I&apos;m Navin Venkat V, a 21-year-old Full-Stack Web Developer, Blockchain enthusiast, and Open Source Contributor.
             Passionate about technology, innovation, and building impactful digital experiences.
             I love contributing to open-source projects and collaborating with the developer community.
-            Always eager to learn, explore, and push the boundaries of what's possible.      </p>
+            Always eager to learn, explore, and push the boundaries of what&apos;s possible.      </p>
             <a href="https://drive.google.com/file/d/17uSTm5G9W-CC9IOloxWMAtPVUPgARTGO/view?usp=drivesdk" className="border mt-10 bg-gradient-to-r focus:ring-2 focus:ring-white from-blue-500 to-purple-500 border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[1px] border-white hover:bg-[#5070ff2f] ">
             Resume
           </a>

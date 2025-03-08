@@ -10,7 +10,6 @@ import Skills from "@/components/Skills";
 import { TimelineDemo } from "@/components/Timeline";
 import { useEffect } from "react";
 import Lenis from 'lenis'
-import { RotateWords } from "@/components/AnimateText";
 
 
 export default function Home() {
