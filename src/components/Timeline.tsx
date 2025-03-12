@@ -41,7 +41,7 @@ export function TimelineDemo() {
               <span className="text-md md:text-2xl  bg-gradient-to-r bg-clip-text text-transparent from-purple-500 to-blue-500 font-bold ">Puducherry Technological University</span>
             </div>
             <span className="text-white text-xs md:text-sm lg:text-lg">2020-2024</span>
-            <h4 className="text-neutral-800 mt-7 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">B.Tech Mechanical Engineering - CGPA-7.9</h4>
+            <h4 className="text-neutral-800 mt-7 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">B.Tech in Mechanical Engineering - CGPA-7.9</h4>
           </div>
         </div>
       ),

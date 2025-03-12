@@ -104,15 +104,15 @@ export function Contact() {
       whileInView={{opacity:1, x:0}}
       transition={{duration:0.5, ease:"easeInOut"}}
        className="font-bold text-2xl md:text-4xl text-neutral-800 dark:text-neutral-200 text-center">
-        You know the Business and <span className="text-green-800">I know the Chemistry</span>
+        Have a Project? Let&apos;s <span className="bg-gradient-to-r text-transparent bg-clip-text from-purple-500 to-blue-500">Talk!</span>
       </motion.h2>
-      <motion.p
+      {/* <motion.p
       initial={{opacity : 0, x:50}}
       whileInView={{opacity:1, x:0}}
       transition={{duration:0.5, ease:"easeInOut"}}
        className="text-neutral-600 text-sm mt-2 dark:text-neutral-300 text-center">
         Maybe You and I could partner up
-      </motion.p>
+      </motion.p> */}
       {loadingMessage.message && <p className={`mt-[20px] text-center text-[0.9rem] ${loadingMessage.success ? "text-green-400" : "text-red-400"}`}>{loadingMessage.message}</p>}
       <form className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
