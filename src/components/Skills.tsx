@@ -23,7 +23,7 @@ const Skills = () => {
                 <span className="text-3xl md:text-5xl text-center w-auto  font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white">Skills & Technologies</span>
             </motion.div>
             <div className="w-full flex flex-wrap justify-center items-center mt-10 mx-auto px-4 sm:px-6 gap-4">
-                {skills.map((skill, index) => (
+                {skills.map((skill) => (
                     <motion.div
                         key={skill}
                         // initial={{ opacity: 0, y: 20 }}
