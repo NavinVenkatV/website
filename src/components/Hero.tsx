@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion'
 import Time from './Time';
 import { RotateWords } from './AnimateText';
+import GitHub from './GitHub';
 
 const Hero = () => {
   return (
@@ -21,6 +22,7 @@ const Hero = () => {
             <div className='my-3'>
               <Time />
             </div>
+            {/* <GitHub/> */}
           </a>
           <RotateWords text="Yo Yo!! I'm a" words={["Web Developer", "Web3 Developer", "Fast Learner", "Pianist"]} />
           {/* <div className="flex flex-col justify-center h-[80%] ">
