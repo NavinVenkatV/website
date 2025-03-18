@@ -6,30 +6,30 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 // import { Services } from "@/components/Services";
-import Skills from "@/components/Skills";
+// import Skills from "@/components/Skills";
 import { TimelineDemo } from "@/components/Timeline";
-import { useEffect } from "react";
-import Lenis from 'lenis'
+// import { useEffect } from "react";
+// import Lenis from 'lenis'
+// import LocomotiveScroll from 'locomotive-scroll';
+// import { useEffect } from "react";
+
 
 
 export default function Home() {
 
-  useEffect(()=>{
-    const lenis = new Lenis();
-    function raf(time : number){
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
-  }, [])
+  // useEffect(()=>{
+  //   const lenis = new Lenis();
+  //   function raf(time : number){
+  //     lenis.raf(time)
+  //     requestAnimationFrame(raf)
+  //   }
+  //   requestAnimationFrame(raf)
+  // }, [])
 
   return (
     <div className="overflow-hidden px-1">
       <Floating/>
       <Hero/>
-      <div className="mt-12">
-        <Skills/>
-      </div>
       {/* <div className="flex flex-col justify-center items-center p-5">  
         <div className="mt-20" id="services">       
            <Cover className="text-3xl md:text-5xl font-bold">Our Services</Cover>

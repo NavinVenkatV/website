@@ -4,6 +4,7 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import ProjectContents from "./ui/projectContents";
 import {motion} from "framer-motion"
 
+
 export function Projects() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
@@ -11,13 +12,13 @@ export function Projects() {
 
   return (
     <div className="w-full h-full py-20" id="projects">
-      <motion.h2
-      initial={{opacity : 0, x:50}}
-      whileInView={{opacity : 1, x:0}}
-      transition={{duration : 0.5, ease:"easeIn"}}
-       className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans">
-        Recent Projects & Blogs
-      </motion.h2>
+      <motion.div
+                  initial={{opacity : 0, x:-50}}
+                  whileInView={{opacity:1, x:0}}
+                  transition={{duration:0.5, ease:"easeInOut"}}
+                  >
+                      <span className="text-2xl pb-16 md:text-5xl flex justify-center text-center w-auto  font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white">Recent Projects & Blogs</span>
+                  </motion.div>
       <Carousel items={cards} />
     </div>
   );
@@ -25,16 +26,11 @@ export function Projects() {
 
 const data = [
   {
-    category: "pingMe",
-    title: "Real time website monitoring solution.",
+    category: "",
+    title: "PingMe 🔗",
     src: "/pingMe.png",
-    content: <ProjectContents navigate="https://pingmeyourwebsite.vercel.app/" title={`PingMe is a tool that helps you monitor your website and get notified when it goes down.`} src="/pingMe_pc.png"
-      description={`Developed PingMe, a SaaS platform for website monitoring, providing real-time performance and uptime tracking for websites.
- Implemented features for users to monitor multiple websites, track downtime, and get instant alerts on performance issues.
- Built the front-end with Next.js and styled the platform using Tailwind CSS for a clean and responsive UI.
- Utilized NextAuth for secure user authentication and management, providing a personalized user experience.
- Used Prisma and PostgreSQL to handle efficient data management and storage in the backend.
- Integrated Framer Motion for smooth animations and transitions to enhance user interaction and experience.`} />,
+    content: <ProjectContents navigate="https://pingmeyourwebsite.vercel.app/" title={``} src="/pingMe_pc.png"
+      description={`PingMe is a SaaS platform for website monitoring, ensuring uptime and performance tracking. Built with Next.js, Next Auth, TypeScript, PostgreSQL, and Prisma, it offers real-time insights. Secure authentication and a sleek UI enhance the user experience.`} />,
   },
   {
     category: "DigixLabs",

@@ -15,8 +15,8 @@ export default function Time() {
     }
 
     return (
-        <div className="text-white font-bold p-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 w-[100px] md:w-[250px] text-sm text-center">
-            {formatTime(time)}
+        <div className="text-white font-bold p-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 w-[180px] md:w-[300px] text-sm text-center">
+            {formatTime(time)} - Idle
         </div>
     )
 }

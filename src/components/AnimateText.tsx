@@ -21,7 +21,7 @@ export function RotateWords({
     }, [])
     return (
 
-        <div className="text-2xl py-10  font-bold text-white md:text-6xl md:leading-[4rem] w-fit ">
+        <div className="text-2xl py-10 w-[600px] font-bold text-white md:text-6xl md:leading-[4rem] ">
             {text}{' '}
             <AnimatePresence mode="wait">
                 <motion.div

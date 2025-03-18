@@ -10,7 +10,7 @@ export function TimelineDemo() {
         <div className="flex flex-col gap-[20px]" id="experience">
           <div>
             <div>
-              <span className="text-md md:text-2xl w-full  bg-gradient-to-r bg-clip-text text-transparent from-purple-500 to-blue-500  font-bold ">Software Developer @AgileSoftLabs</span>
+              <span className="text-md md:text-2xl w-full  bg-gradient-to-r bg-clip-text text-transparent from-purple-500 to-blue-500  font-bold ">Software Developer <a href="https://www.agilesoftlabs.com/" className="cursor-pointer hover:scale-105 ">@AgileSoftLabs 🔗</a></span>
             </div>
             <span className="mt-10 text-white text-xs md:text-sm lg:text-lg">2025 - Present</span>
             <ul className="text-neutral-800 mt-7 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-2">
