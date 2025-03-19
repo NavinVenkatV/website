@@ -8,8 +8,9 @@ import Time from './Time';
 import { RotateWords } from './AnimateText';
 // import GitHub from './GitHub';
 import Skills from './Skills';
-
+import { useRouter } from 'next/navigation';
 const Hero = () => {
+  const router = useRouter();
   return (
     <div>
       <div className="w-full  overflow-x-hidden lg:flex justify-between px-auto py-3 lg:px-24 lg:py-16">
@@ -61,7 +62,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}>
-          <div className="w-[90%] mx-auto py-[30px] flex flex-col items-center z-2">
+          <div className="w-[90%] mx-auto py-[30px] flex flex-col  z-2">
 
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -81,9 +82,12 @@ const Hero = () => {
               <span className="text-white font-bold"> Docker</span>. Currently, I&apos;m exploring
               <span className="text-white font-bold"> Web3</span> and sharpening my skills in
               <span className="text-white font-bold"> Data Structures and Algorithms (DSA)</span>.  </p>
-            <a href="https://drive.google.com/file/d/17uSTm5G9W-CC9IOloxWMAtPVUPgARTGO/view?usp=drivesdk" className="border mt-10 bg-gradient-to-r hover:scale-105 transition-all focus:ring-2 focus:ring-white from-blue-500 to-purple-500 border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[1px] border-white hover:bg-[#5070ff2f] ">
+            {/* <a href="https://drive.google.com/file/d/17uSTm5G9W-CC9IOloxWMAtPVUPgARTGO/view?usp=drivesdk" className="border mt-10 bg-gradient-to-r hover:scale-105 transition-all focus:ring-2 focus:ring-white from-blue-500 to-purple-500 border-1 text-white max-w-[130px] w-full h-[40px] flex justify-center items-center font-[600] rounded-2xl mx-auto pb-[1px] border-white hover:bg-[#5070ff2f] ">
               Resume
-            </a>
+            </a> */}
+            <button onClick={()=>{
+              router.push('https://drive.google.com/file/d/17uSTm5G9W-CC9IOloxWMAtPVUPgARTGO/view?usp=drivesdk')
+            }} className='p-1 bg-blue-50 mt-10 max-w-[130px] w-full bg-gradient-to-r hover:scale-105 text-white transition-all focus:ring-2 focus:ring-white from-blue-500 to-purple-500 rounded-xl'>Resume</button>
             <ShootingStars className="z-[-1]" />
             <StarsBackground className="z-[-1]" />
 
