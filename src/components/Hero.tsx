@@ -9,7 +9,7 @@ import { RotateWords } from './AnimateText';
 // import GitHub from './GitHub';
 import Skills from './Skills';
 import { useRouter } from 'next/navigation';
-import { GithubGraph } from './ui/github';
+// import { GithubGraph } from './ui/github';
 const Hero = () => {
   const router = useRouter();
   return (
@@ -97,13 +97,13 @@ const Hero = () => {
 
       </div>
 
-      <div className='text-white my-10 px-4 w-screen flex justify-center items-center text-centers'>
+      {/* <div className='text-white my-10 px-4 w-screen flex justify-center items-center text-centers'>
             <GithubGraph
                 username="NavinVenkatV" // your github username
                 blockMargin={2}
                 colorPallete={["#1e1e2f", "#5a3e7a", "#7e5aa2", "#a87cc3", "#d9a9e6"]}
               />;
-        </div>
+        </div> */}
       
       <div className='px-auto lg:px-24 '>
       <motion.div
