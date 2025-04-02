@@ -14,7 +14,7 @@ const great = Great_Vibes({
 
 export function Projects() {
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} />
+    <Card key={card.src} card={card} index={index}/>
   ));
 
   return (
@@ -33,15 +33,17 @@ export function Projects() {
 
 const data = [
   {
-    category: "",
-    title: "PingMe 🔗",
+    category: "PingMe",
+    link : "https://pingmeyourwebsite.vercel.app/",
+    title: "",
     src: "/pingMe.png",
     content: <ProjectContents navigate="https://pingmeyourwebsite.vercel.app/" title={``} src="/pingMe_pc.png"
       description={`PingMe is a SaaS platform for website monitoring, ensuring uptime and performance tracking. Built with Next.js, Next Auth, TypeScript, PostgreSQL, and Prisma, it offers real-time insights. Secure authentication and a sleek UI enhance the user experience.`} />,
   },
   {
     category: "DigixLabs",
-    title: "Building the Future of Technical Content.",
+    title: "",
+    link : "https://digix-labs.vercel.app/",
     src: "/digix_mobile.png",
     content: <ProjectContents navigate="https://digix-labs.vercel.app/" title={`Technical expertise, viral content,and growth strategies, all in one place.`} src="/digix_pc.png"
       description={`Developed a SaaS platform tailored for technical content creators, offering marketing, website creation, and innovative project ideas.
@@ -52,27 +54,30 @@ const data = [
   },
   {
     category: "NOAH",
-    title: "Enhance your business with us",
+    title: "",
+    link : "https://noahdevs.vercel.app/",
     src: "/p1.png",
     content: <ProjectContents navigate="https://noahdevs.vercel.app/" title={`N O A H - A highly reponsive and interactive website.`} src="/noah.png"
       description={`My personal project N O A H, a highly responsive and interactive website built using Next.js, Typescript, Tailwind CSS, Framer Motion, GSAP, Aceternity UI, and PostgreSQL. The project is designed to offer seamless web development services with smooth animations, modern UI/UX, and robust backend integration.`} />,
   },
   {
     category: "Space X Beta",
-    title: "Lost in the stars, found in the universe",
+    title: "",
+    link : "https://spacexbeta.vercel.app/",
     src: "/po2.png",
     content: <ProjectContents navigate="https://spacexbeta.vercel.app/" src="/x.png" title={"Lost in the stars, found in the universe."} description={"SpaceXHub is a web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and styled with Tailwind CSS. Currently in its initial stage, the project aims to serve as a hub for space exploration enthusiasts. Future updates will include real-time weather updates and global climate change insights to enhance its functionality and user engagement."} />,
   },
   {
     category: "Portfolio",
-    title: "Explore more about my Journey",
+    title: "",
+    link : "https://navinvenkat.xyz/",
     src: "/po3.png",
-    content: <ProjectContents navigate="https://navinpinkman.vercel.app/" src="/po4.png" title="Portfolio" description="A showcase of innovative projects, problem-solving expertise, and a passion for creating impactful digital experiences." />,
+    content: <ProjectContents navigate="https://navinvenkat.xyz/" src="/po4.png" title="Portfolio" description="A showcase of innovative projects, problem-solving expertise, and a passion for creating impactful digital experiences." />,
   },
 
   {
     category: "Understanding Blockchain",
-    title: "Blockchain is not just the foundation of cryptocurrency",
+    title: "",
     src: "/bl.webp",
     content: <ProjectContents navigate="https://www.blockchain.com/" src="/bl.webp" title="Understanding Blockchain" description="Blockchain is not just the foundation of cryptocurrency; it’s a transformative technology that can revolutionize industries. This blog will provide an easy-to-understand introduction to blockchain technology, its structure, how it works, and the wide range of applications it powers beyond digital currencies." />
   },
@@ -84,7 +89,7 @@ const data = [
   },
   {
     category: "Aritificial Intelligence",
-    title: "Explore more about Artificial Intelligence",
+    title: "",
     src : "/p2.jpg",
     content: <ProjectContents navigate="https://ai.google/" src="/xyz.jpg" title="Artificial Intelligence" description="Personalized Assistants: AI assistants will become more intuitive, handling complex tasks like booking appointments, managing finances, and even emotional support. Smart Homes: AI-driven IoT devices will create fully integrated smart homes, optimizing energy use, security, and convenience."/>,
   },

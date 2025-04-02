@@ -1,5 +1,6 @@
 "use client"
 import { Floating } from "@/components/FLoating";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import { Kanit } from "next/font/google";
@@ -42,7 +43,7 @@ export default function Home() {
         {/* <Contact/> */}
       </div>
       {/* <RotateWords text="You can" words={["build", "beautiful", "websites"]} /> */}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
