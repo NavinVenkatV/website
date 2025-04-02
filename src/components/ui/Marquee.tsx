@@ -40,7 +40,7 @@ function Marquee({ from, to }: Typess) {
                 className="flex flex-shrink-0"
             >
                 {uMarquee.map((skills, index) => {
-                    return <div className='pr-3'>
+                    return <div key={index} className='pr-3'>
                         <Skills skill={skills} />
                     </div>;
                 })}
