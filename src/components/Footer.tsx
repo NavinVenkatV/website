@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -8,7 +7,7 @@ const Footer = () => {
       <div>GitHub</div>
       <div>X</div>
     </div>
-    
+
   );
 };
 

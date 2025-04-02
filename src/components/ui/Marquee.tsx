@@ -1,5 +1,5 @@
 import React from 'react'
-import { easeInOut, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import Skills from '../Skills';
 
 const uMarquee = [
@@ -53,7 +53,7 @@ function Marquee({ from, to }: Typess) {
                 className="flex flex-shrink-0"
             >
                 {uMarquee.map((skills, index) => {
-                    return <div className='pr-3'>
+                    return <div key={index} className='pr-3'>
                         <Skills skill={skills} />
                     </div>;
                 })}

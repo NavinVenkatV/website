@@ -1,17 +1,7 @@
 "use client"
-import { Contact } from "@/components/Contact";
 import { Floating } from "@/components/FLoating";
-import Footer from "@/components/Footer";
-// import GitHubGraph from "@/components/gitHub";
 import Hero from "@/components/Hero";
 import { Projects } from "@/components/Projects";
-// import { Services } from "@/components/Services";
-// import Skills from "@/components/Skills";
-import { TimelineDemo } from "@/components/Timeline";
-// import { useEffect } from "react";
-// import Lenis from 'lenis'
-// import LocomotiveScroll from 'locomotive-scroll';
-// import { useEffect } from "react";
 import { Kanit } from "next/font/google";
 const kanit = Kanit({
   subsets: ['latin'],
