@@ -3,6 +3,13 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import ProjectContents from "./ui/projectContents";
 import {motion} from "framer-motion"
+import { Great_Vibes } from "next/font/google";
+
+const great = Great_Vibes({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400'
+})
 
 
 export function Projects() {
@@ -13,12 +20,12 @@ export function Projects() {
   return (
     <div className="w-full h-full py-20" id="projects">
       <motion.div
-                  initial={{opacity : 0, x:-50}}
-                  whileInView={{opacity:1, x:0}}
-                  transition={{duration:0.5, ease:"easeInOut"}}
+                  // initial={{opacity : 0, x:-50}}
+                  // whileInView={{opacity:1, x:0}}
+                  // transition={{duration:0.5, ease:"easeInOut"}}
                   >
-                      <span className="text-2xl pb-16 md:text-5xl flex justify-center text-center w-auto  font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white">Recent Projects & Blogs</span>
-                  </motion.div>
+        <h1 className="text-3xl md:text-5xl text-center mb-10 "><span className={`${great.className} text-red-700`}>Recent Projects & Blogs</span> </h1>
+        </motion.div>
       <Carousel items={cards} />
     </div>
   );

@@ -2,6 +2,14 @@
 import * as React from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useState } from "react"
+import { Great_Vibes } from "next/font/google";
+
+const great = Great_Vibes({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400'
+})
+
 
 export function RotateWords({
     text = "Rotate",
@@ -21,7 +29,7 @@ export function RotateWords({
     }, [])
     return (
 
-        <div className="text-2xl py-10 w-[600px] font-bold text-white md:text-6xl md:leading-[4rem] ">
+        <div className=" w-[600px] text-4xl flex justify-center items-center font-bold text-white md:leading-[4rem] ">
             {text}{' '}
             <AnimatePresence mode="wait">
                 <motion.div
@@ -30,7 +38,7 @@ export function RotateWords({
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 40 }}
                     transition={{ duration: 0.5 }}
-                    className=" bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500"
+                className={`${great.className} text-red-700`}
                 >
                     {words[index]}
                 </motion.div>

@@ -12,8 +12,12 @@ import { TimelineDemo } from "@/components/Timeline";
 // import Lenis from 'lenis'
 // import LocomotiveScroll from 'locomotive-scroll';
 // import { useEffect } from "react";
-
-
+import { Kanit } from "next/font/google";
+const kanit = Kanit({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '200'
+})
 
 export default function Home() {
 
@@ -27,7 +31,7 @@ export default function Home() {
   // }, [])
 
   return (
-    <div className="overflow-hidden px-1">
+    <div className={`overflow-hidden px-1 ${kanit.className}`}>
       <Floating/>
       <Hero/>
       {/* <div className="flex flex-col justify-center items-center p-5">  
@@ -41,14 +45,14 @@ export default function Home() {
         </div>
       </div> */}
       <Projects/>
-      <div>
+      {/* <div>
         <TimelineDemo/>
-      </div>
+      </div> */}
       <div className="mt-3">
-        <Contact/>
+        {/* <Contact/> */}
       </div>
       {/* <RotateWords text="You can" words={["build", "beautiful", "websites"]} /> */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
