@@ -8,6 +8,7 @@ const Footer = () => {
       <div>GitHub</div>
       <div>X</div>
     </div>
+    
   );
 };
 
