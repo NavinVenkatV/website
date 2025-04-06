@@ -21,6 +21,7 @@ interface CarouselProps {
   initialScroll?: number;
 }
 
+
 type Card = {
   src: string;
   title: string;
