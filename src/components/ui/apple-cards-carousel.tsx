@@ -14,7 +14,7 @@ import {
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import { useOutsideClick } from "@/hooks/use-outside-click";
+// import { useOutsideClick } from "@/hooks/use-outside-click";
 import { TbExternalLink } from "react-icons/tb";
 import { Kanit } from "next/font/google";
 const kanit = Kanit({
@@ -193,7 +193,7 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  useOutsideClick(containerRef, () => handleClose());
+  // useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
     setOpen(true);
