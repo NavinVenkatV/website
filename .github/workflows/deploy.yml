@@ -28,6 +28,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: nainvenkat/portfolio:latest
+          build-args: |
+            --no-cache
 
       - name: Verify Pushed Image
         run: docker pull nainvenkat/portfolio:latest
@@ -39,7 +41,23 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            # Pull the latest image
             sudo docker pull nainvenkat/portfolio:latest
+
+            # Cleanup old containers
             sudo docker stop web-app || true
             sudo docker rm web-app || true
-            sudo docker run -d --name web-app -p 3005:3000 nainvenkat/portfolio:latest
+
+            # Run the new container
+            sudo docker run -d --name web-app-${GITHUB_SHA} -p 3005:3000 nainvenkat/portfolio:latest
+
+      - name: Verify Docker Image on EC2
+        uses: appleboy/ssh-action@master  
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            sudo docker pull nainvenkat/portfolio:latest
+            sudo docker images
+s
