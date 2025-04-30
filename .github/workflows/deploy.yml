@@ -60,4 +60,3 @@ jobs:
           script: |
             sudo docker pull nainvenkat/portfolio:latest
             sudo docker images
-s
