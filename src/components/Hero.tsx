@@ -40,18 +40,17 @@ const Hero = () => {
             text=""
             words={["Web developer", "web3 developer", "Pianist", "Quick Learner"]}
           />
-          <p className="mt-5 text-justify text-sm md:text-xl max-w-[700px]">
-            I&apos;m Navin Venkat, a skilled{" "}
-            <span className="text-red-700">Full Stack Developer and DevOps</span>{" "}
-            practitioner passionate about innovative solutions. I&apos;m currently
-            advancing my expertise in <span className="text-red-700">web3</span>,
-            refining my <span className="text-red-700">Web2 skills, and mastering DSA</span>. I actively contribute to projects and seek opportunities to
-            collaborate and grow.
-          </p>
+          <div className="mt-3 text-justify text-sm md:text-lg max-w-[700px]">
+            <p><span className="text-white text-center flex justify-center font-bold pr-2">Full Stack Developer & DevOps Practitioner</span>
+              <p className="mt-3 text-neutral-400">Skilled in building end-to-end web applications with robust backend systems and clean, responsive UIs. I streamline development using modern DevOps tools, CI/CD pipelines, containerization, and cloud deployment.</p>
+            </p>
+            <p className="mt-2"><span className="text-white text-center flex justify-center w-full  font-bold pr-2">Web3 Explorer & Blockchain Enthusiast</span>
+              <p className="mt-3 text-neutral-400">Diving deep into the decentralized web — exploring smart contracts, dApps, and blockchain infrastructure. I aim to blend Web2 stability with Web3 innovation to build the next generation of internet applications.</p></p>
+          </div>
           <button
-          onClick={()=>{
-            router.push('https://drive.google.com/file/d/1beWYVGInuBwK2kIYMoloWe8n0bAVwGOh/view?usp=drivesdk')
-          }}
+            onClick={() => {
+              router.push('https://drive.google.com/file/d/1beWYVGInuBwK2kIYMoloWe8n0bAVwGOh/view?usp=drivesdk')
+            }}
             className={`${great.className} text-red-700 text-xl md:text-3xl mt-10 animate:gradient border px-3 py-2 rounded-2xl hover:-translate-y-1 transition-all duration-300 ease-linear hover:bg-neutral-900`}
           >
             Resume

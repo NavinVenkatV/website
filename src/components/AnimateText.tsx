@@ -34,9 +34,9 @@ export function RotateWords({
             <AnimatePresence mode="wait">
                 <motion.div
                     key={words[index]}
-                    initial={{ opacity: 0, y: -40 }}
+                    initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 40 }}
+                    exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.5 }}
                 className={`${great.className} text-red-700`}
                 >

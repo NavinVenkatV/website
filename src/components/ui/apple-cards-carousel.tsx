@@ -15,6 +15,14 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { TbExternalLink } from "react-icons/tb";
+import { Kanit } from "next/font/google";
+const kanit = Kanit({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '200'
+})
+
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -200,7 +208,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 h-screen z-50  overflow-auto">
+          <div className={`fixed inset-0 h-screen z-50 ${kanit.className} overflow-auto`}>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -225,7 +233,7 @@ export const Card = ({
                 layoutId={layout ? `category-${card.title}` : undefined}
                 className="text-base font-medium text-black dark:text-white"
               >
-                <a href={card.link} target="_blank" className="">{card.category}🔗</a>
+                <a href={card.link} target="_blank" className="flex gap-1 hover:text-red-500 transition-all duration-300 ease-in-out items-center"><div className="">{card.category}</div><TbExternalLink/></a>
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}

@@ -50,7 +50,7 @@ import React from 'react'
 
 function Skills({skill} : {skill : string}) {
   return (
-      <div className='p-1 text-sm cursor-pointer 6  text-center rounded-xl bg-white text-black font-bold mt-6 w-[100px] hover:scale-110 transition-all duration-500'>
+      <div className='p-1 text-sm cursor-pointer 6  text-center rounded-xl bg-red-950 text-white  font-bold mt-6 w-[100px] hover:scale-110 transition-all duration-500'>
         {skill}
       </div>
   )

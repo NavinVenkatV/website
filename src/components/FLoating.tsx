@@ -6,6 +6,8 @@ import {
   IconHome,
   IconNewSection,
 } from "@tabler/icons-react";
+import { FaLinkedin } from "react-icons/fa";
+
 import Image from "next/image";
 import { MailIcon, Settings2Icon } from "lucide-react";
 
@@ -18,14 +20,7 @@ export function Floating() {
       ),
       href: "/",
     },
-
-    {
-      title: "Services",
-      icon: (
-        <Settings2Icon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#services",
-    },
+    
     {
       title: "Projects",
       icon: (
@@ -36,12 +31,13 @@ export function Floating() {
     {
       title: "LinkedIn",
       icon: (
-        <Image
-          src="linkedin.svg"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+        // <Image
+        //   src="linkedin.svg"
+        //   width={20}
+        //   height={20}
+        //   alt="Aceternity Logo"
+        // />
+        <FaLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300"/>
       ),
       href: "https://www.linkedin.com/in/navin-venkat-38bb28279/",
     },
