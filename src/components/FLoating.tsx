@@ -8,7 +8,7 @@ import {
 } from "@tabler/icons-react";
 import { FaLinkedin } from "react-icons/fa";
 
-import { MailIcon } from "lucide-react";
+import { MailIcon } from "lucide-react"
 
 
 export function Floating() {
