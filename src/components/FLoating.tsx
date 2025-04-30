@@ -8,8 +8,7 @@ import {
 } from "@tabler/icons-react";
 import { FaLinkedin } from "react-icons/fa";
 
-import Image from "next/image";
-import { MailIcon, Settings2Icon } from "lucide-react";
+import { MailIcon } from "lucide-react";
 
 export function Floating() {
   const links = [
@@ -20,7 +19,7 @@ export function Floating() {
       ),
       href: "/",
     },
-    
+
     {
       title: "Projects",
       icon: (
