@@ -7,10 +7,7 @@ import {
   IconNewSection,
 } from "@tabler/icons-react";
 import { FaLinkedin } from "react-icons/fa";
-
 import { MailIcon } from "lucide-react"
-
-
 export function Floating() {
   const links = [
     {
@@ -32,7 +29,6 @@ export function Floating() {
       title: "LinkedIn",
       icon: (
         // <Image
-        //   src="linkedin.svg"
         //   width={20}
         //   height={20}
         //   alt="Aceternity Logo"
