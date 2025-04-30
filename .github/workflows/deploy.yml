@@ -28,6 +28,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: nainvenkat/portfolio:latest
+          no-cache: true
 
       - name: Verify Pushed Image
         run: docker pull nainvenkat/portfolio:latest
