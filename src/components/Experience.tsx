@@ -1,6 +1,5 @@
 import React from 'react'
 import { Great_Vibes } from "next/font/google";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import Company from './ui/company';
 
 
