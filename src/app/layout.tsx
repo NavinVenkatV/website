@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Ensure favicon is correctly linked */}
-        <link rel="icon" href="/image.png" />
+        <link rel="icon" href="/logoo.jpg" />
         <meta name="theme-color" content="#000000" />
       </head>
       <body

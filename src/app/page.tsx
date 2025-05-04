@@ -1,4 +1,5 @@
 "use client"
+import Experience from "@/components/Experience";
 import { Floating } from "@/components/FLoating";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -42,6 +43,8 @@ export default function Home() {
       <div className="mt-3">
         {/* <Contact/> */}
       </div>
+      <Experience/>
+      dfneofneonfeonfoenfonononononok
       {/* <RotateWords text="You can" words={["build", "beautiful", "websites"]} /> */}
       <Footer/>
     </div>

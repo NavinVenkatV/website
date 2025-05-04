@@ -33,6 +33,14 @@ export function Projects() {
 
 const data = [
   {
+    category: "Exa",
+    link : "https://exaai.vercel.app/",
+    title: "",
+    src: "/exa_mob.png",
+    content: <ProjectContents navigate="https://exaai.vercel.app/" title={``} src="/exa_pc.png"
+      description={`Exa is an AI-powered search engine that helps developers and researchers find high-quality, relevant content from the web with precision.`} />,
+  },
+  {
     category: "PingMe",
     link : "https://pingmeyourwebsite.vercel.app/",
     title: "",
@@ -47,10 +55,7 @@ const data = [
     src: "/digix_mobile.png",
     content: <ProjectContents navigate="https://digix-labs.vercel.app/" title={`Technical expertise, viral content,and growth strategies, all in one place.`} src="/digix_pc.png"
       description={`Developed a SaaS platform tailored for technical content creators, offering marketing, website creation, and innovative project ideas.
- Built an engaging and dynamic user interface using Framer Motion and GSAP for animations and interactions.
- Integrated user authentication and management with Next Auth to ensure secure access and seamless user onboarding.
- Utilized Prisma and PostgreSQL for efficient data handling and storage, ensuring a scalable backend architecture.
- Implemented advanced content management tools to help creators streamline their workflows and reach broader audiences.`} />,
+ Built an engaging and dynamic user interface using Framer Motion and GSAP for animations and interactions.`} />,
   },
   {
     category: "NOAH",

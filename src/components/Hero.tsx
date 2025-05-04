@@ -41,12 +41,17 @@ const Hero = () => {
             words={["Web developer", "web3 developer", "Pianist", "Quick Learner"]}
           />
           <div className="mt-3 text-justify text-sm md:text-lg max-w-[700px]">
-            <p><span className="text-white text-center flex justify-center font-bold pr-2">Full Stack Developer & DevOps Practitioner</span>
-              <p className="mt-3 text-neutral-400">Skilled in building end-to-end web applications with robust backend systems and clean, responsive UIs. I streamline development using modern DevOps tools, CI/CD pipelines, containerization, and cloud deployment.</p>
+            <p className="text-white text-center font-bold">Full Stack Developer & DevOps Practitioner</p>
+            <p className="mt-2 text-neutral-400">
+              I build full-stack web apps with clean UIs and scalable backends. Experienced in CI/CD, Docker, and cloud deployment.
             </p>
-            <p className="mt-2"><span className="text-white text-center flex justify-center w-full  font-bold pr-2">Web3 Explorer & Blockchain Enthusiast</span>
-              <p className="mt-3 text-neutral-400">Diving deep into the decentralized web — exploring smart contracts, dApps, and blockchain infrastructure. I aim to blend Web2 stability with Web3 innovation to build the next generation of internet applications.</p></p>
+
+            <p className="mt-4 text-white text-center font-bold">Web3 Explorer & Blockchain Enthusiast</p>
+            <p className="mt-2 text-neutral-400">
+              Passionate about smart contracts and dApps. Bridging Web2 and Web3 to build future-ready apps.
+            </p>
           </div>
+
           <button
             onClick={() => {
               router.push('https://drive.google.com/file/d/1beWYVGInuBwK2kIYMoloWe8n0bAVwGOh/view?usp=drivesdk')
