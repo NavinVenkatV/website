@@ -4,8 +4,10 @@ import { Floating } from "@/components/FLoating";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Projects } from "@/components/Projects";
-import { Kanit } from "next/font/google";
-const kanit = Kanit({
+import { Montserrat
+ } from "next/font/google";
+const kanit = Montserrat
+({
   subsets: ['latin'],
   display: 'swap',
   weight: '200'
@@ -40,11 +42,10 @@ export default function Home() {
       {/* <div>
         <TimelineDemo/>
       </div> */}
-      <div className="mt-3">
+      <div className="">
         {/* <Contact/> */}
       </div>
       <Experience/>
-      dfneofneonfeonfoenfonononononok
       {/* <RotateWords text="You can" words={["build", "beautiful", "websites"]} /> */}
       <Footer/>
     </div>

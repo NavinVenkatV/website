@@ -29,7 +29,7 @@ export function RotateWords({
     }, [])
     return (
 
-        <div className=" w-[600px] text-4xl flex justify-center items-center font-bold text-white md:leading-[4rem] ">
+        <div className=" w-auto rounded-full bg-red-900 px-2 my-3 text-4xl flex justify-center items-center font-bold text-black md:leading-[4rem] ">
             {text}{' '}
             <AnimatePresence mode="wait">
                 <motion.div
@@ -38,7 +38,7 @@ export function RotateWords({
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.5 }}
-                className={`${great.className} text-red-700`}
+                className={`${great.className} `}
                 >
                     {words[index]}
                 </motion.div>

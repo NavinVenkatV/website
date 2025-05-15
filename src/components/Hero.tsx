@@ -8,12 +8,39 @@ import { RotateWords } from "./AnimateText";
 import { Great_Vibes } from "next/font/google";
 import { MdOutlineContentCopy } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
+import {motion} from "framer-motion"
 
 const great = Great_Vibes({
   subsets: ["latin"],
   display: "swap",
   weight: "400",
 });
+
+ const container = {
+        hidden: {},
+        show: {
+            transition: {
+                staggerChildren: 0.3,
+            },
+        },
+    };
+
+    const fadeInUp = {
+        hidden: {
+            opacity: 0,
+            y: 20,
+            filter: "blur(8px)",
+        },
+        show: {
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+            transition: {
+                duration: 0.6,
+                ease: "easeInOut",
+            },
+        },
+    };
 
 const Hero = () => {
   const router = useRouter();
@@ -34,33 +61,51 @@ const Hero = () => {
   return (
     <div>
       <div className="w-full overflow-x-hidden lg:flex justify-between px-auto py-3 lg:px-24">
-        <div className="w-[90%] text-white font-semibold items-center mx-auto py-[30px] flex flex-col z-2">
-          <h1 className="text-3xl md:text-5xl">Navin Venkat</h1>
-          <RotateWords
+        <motion.div 
+        variants={container}
+        initial='hidden'
+        animate="show"
+        className="w-[90%] text-white font-semibold items-center mx-auto py-[30px] flex flex-col z-2">
+          <motion.h1
+          variants={fadeInUp}
+           className="text-3xl md:text-5xl">Navin Venkat</motion.h1>
+          <motion.div
+          variants={fadeInUp}>
+            <RotateWords
             text=""
             words={["Web developer", "web3 developer", "Pianist", "Quick Learner"]}
           />
-          <div className="mt-3 text-justify text-sm md:text-lg max-w-[700px]">
-            <p className="text-white text-center font-bold">Full Stack Developer & DevOps Practitioner</p>
-            <p className="mt-2 text-neutral-400">
-              I build full-stack web apps with clean UIs and scalable backends. Experienced in CI/CD, Docker, and cloud deployment.
-            </p>
-
-            <p className="mt-4 text-white text-center font-bold">Web3 Explorer & Blockchain Enthusiast</p>
-            <p className="mt-2 text-neutral-400">
-              Passionate about smart contracts and dApps. Bridging Web2 and Web3 to build future-ready apps.
-            </p>
+          </motion.div>
+          <motion.img
+          variants={fadeInUp}
+          className="rounded-full w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
+           src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXZ0dWI1c2FienQxcHJrdW93YWc2NTNsazQ5d3NlbHpvMDg1YTJmdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3FjEPbKqEPhPpmC8uY/giphy.gif" alt="Hey" />
+          <div className="p-4 text-white shadow-sm max-w-xl">
+            <motion.p
+              variants={fadeInUp}
+             className=" leading-relaxed ">
+              <span className="font-bold text-red-500">22-year-old Mechanical Engineering graduate </span> turned
+              <span className="font-semibold text-red-500"> Full Stack Engineer</span>. Currently exploring
+              <span className="font-semibold text-red-500"> Web3</span> with
+              <span className="font-semibold text-red-500"> Ethereum</span> and
+              <span className="font-semibold text-red-500"> Solana</span>. Interested in
+              <span className="font-semibold text-red-500"> Machine Learning</span> and passionate about
+              <span className="font-semibold "> scalable applications</span>,
+              <span className="font-semibold "> smart contracts</span>, and
+              <span className="font-semibold "> cutting-edge technologies</span>.
+            </motion.p>
           </div>
 
-          <button
+
+          <motion.button variants={fadeInUp}
             onClick={() => {
               router.push('https://drive.google.com/file/d/1beWYVGInuBwK2kIYMoloWe8n0bAVwGOh/view?usp=drivesdk')
             }}
             className={`${great.className} text-red-700 text-xl md:text-3xl mt-10 animate:gradient border px-3 py-2 rounded-2xl hover:-translate-y-1 transition-all duration-300 ease-linear hover:bg-neutral-900`}
           >
             Resume
-          </button>
-          <p className="mt-5 text-white flex gap-2">
+          </motion.button>
+          <motion.p  variants={fadeInUp} className="mt-5 text-white flex lg:gap-2">
             <p>Contact: vnavinvenkat@gmail.com</p>
             <p
               onClick={handleCopy}
@@ -68,10 +113,10 @@ const Hero = () => {
             >
               {click ? <MdOutlineContentCopy /> : <TiTick />}
             </p>
-          </p>
+          </motion.p>
           <ShootingStars className="z-[-1]" />
           <StarsBackground className="z-[-1]" />
-        </div>
+        </motion.div>
       </div>
 
       <div>

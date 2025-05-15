@@ -18,7 +18,7 @@ export function Projects() {
   ));
 
   return (
-    <div className="w-full h-full py-20" id="projects">
+    <div className="w-full h-full py-10" id="projects">
       <motion.div
                   // initial={{opacity : 0, x:-50}}
                   // whileInView={{opacity:1, x:0}}
