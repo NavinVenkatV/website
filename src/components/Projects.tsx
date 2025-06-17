@@ -11,6 +11,32 @@ const great = Great_Vibes({
   weight: '400'
 })
 
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const fadeInUp = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+    filter: "blur(8px)",
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.6,
+      ease: "easeInOut",
+    },
+  },
+};
+
 
 export function Projects() {
   const cards = data.map((card, index) => (
@@ -18,13 +44,13 @@ export function Projects() {
   ));
 
   return (
-    <div className="w-full h-full py-10" id="projects">
+    <div className="w-full h-full  py-20" id="projects">
       <motion.div
-                  // initial={{opacity : 0, x:-50}}
-                  // whileInView={{opacity:1, x:0}}
-                  // transition={{duration:0.5, ease:"easeInOut"}}
+        initial="hidden"
+        whileInView="show"
+        variants={container}
                   >
-        <h1 className="text-3xl md:text-5xl text-center mb-10 "><span className={`${great.className} text-red-700`}>Recent Projects & Blogs</span> </h1>
+        <motion.h1 variants={fadeInUp}  className="text-3xl md:text-5xl px-5 md:px-32  mb-10 "><span className={`${great.className} text-red-700`}>Recent Projects & Blogs</span> </motion.h1>
         </motion.div>
       <Carousel items={cards} />
     </div>
@@ -32,6 +58,15 @@ export function Projects() {
 }
 
 const data = [
+   {
+    category: "CodeIt",
+    link : "https://dm2-buy.vercel.app/",
+    title: "",
+    src: "/codeIt_mob.png",
+    content: <ProjectContents navigate="https://dm2-buy.vercel.app/" title={``} src="/codeIt_pc.png"
+      description={` Built a real-time collaborative platform to securely store, organize, and share code snippets across multiple programming languages.
+ Supports rich syntax highlighting, instant editing, and customizable access controls.Implemented multi-user real-time editing with instant synchronization, enhancing team productivity and seamless collaboration. Stack: React.js, TypeScript, Tailwind CSS, Mongo DB, Express.js, WebSocket, Clerk`} />,
+  },
   {
     category: "Exa",
     link : "https://exaai.vercel.app/",
@@ -47,15 +82,6 @@ const data = [
     src: "/pingMe.png",
     content: <ProjectContents navigate="https://pingmeyourwebsite.vercel.app/" title={``} src="/pingMe_pc.png"
       description={`PingMe is a SaaS platform for website monitoring, ensuring uptime and performance tracking. Built with Next.js, Next Auth, TypeScript, PostgreSQL, and Prisma, it offers real-time insights. Secure authentication and a sleek UI enhance the user experience.`} />,
-  },
-  {
-    category: "newsHub",
-    link : "https://nav-news-hub.vercel.app/",
-    title: "",
-    src: "/pingMe.png",
-    content: <ProjectContents navigate="https://nav-news-hub.vercel.app/" title={``} src="/pingMe_pc.png"
-      description={`Built an AI-driven platform that summarizes trending news articles into concise, real-time updates. Users can save topics, receive
- weekly digests, and personalize content. Admins can update blogs from a dashboard, with automatic S3 upload for media.`} />,
   },
   {
     category: "DigixLabs",

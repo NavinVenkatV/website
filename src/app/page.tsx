@@ -39,12 +39,7 @@ export default function Home() {
         </div>
       </div> */}
       <Projects/>
-      {/* <div>
-        <TimelineDemo/>
-      </div> */}
-      <div className="">
-        {/* <Contact/> */}
-      </div>
+      
       <Experience/>
       {/* <RotateWords text="You can" words={["build", "beautiful", "websites"]} /> */}
       <Footer/>
