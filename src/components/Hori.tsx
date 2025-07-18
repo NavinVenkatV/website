@@ -35,7 +35,6 @@ const fadeInUp = {
   },
 };
 
-
 export default function Hori() {
   return (
     <div className="bg-black md:px-20  text-white">
