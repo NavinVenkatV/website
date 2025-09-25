@@ -68,7 +68,8 @@ const Hero = () => {
         className="w-[90%] text-white font-semibold items-center mx-auto py-[30px] flex flex-col z-2">
           <motion.h1
           variants={fadeInUp}
-           className="text-3xl md:text-5xl">Navin Venkat</motion.h1>
+           className="text-3xl md:text-5xl">Navin Venkat </motion.h1>
+           <div>Currently doing Msc @<a href="https://www.epita.fr/">Epita - France</a></div>
           <motion.div
           variants={fadeInUp}>
             <RotateWords
