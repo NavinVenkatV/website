@@ -69,7 +69,10 @@ const Hero = () => {
           <motion.h1
           variants={fadeInUp}
            className="text-3xl md:text-5xl">Navin Venkat </motion.h1>
-           <div>Currently doing Msc @<a href="https://www.epita.fr/">Epita - France</a></div>
+           <motion.h2
+           variants={fadeInUp} className="text-neutral-400 text-bold">
+            Msc @<a href="https://www.epita.fr/">Epita - France</a>
+           </motion.h2>
           <motion.div
           variants={fadeInUp}>
             <RotateWords
