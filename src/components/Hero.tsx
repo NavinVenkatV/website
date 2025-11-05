@@ -71,8 +71,7 @@ const Hero = () => {
            className="text-3xl md:text-5xl">Navin Venkat </motion.h1>
            <motion.h2
            variants={fadeInUp} className="text-neutral-400 text-bold">
-            {/* Msc @<a href="https://www.epita.fr/">Epita - France</a> */}
-            This website is not for Mohammed Bitch(Malkova)
+            Msc @<a href="https://www.epita.fr/">Epita - France</a>
            </motion.h2>
           <motion.div
           variants={fadeInUp}>
