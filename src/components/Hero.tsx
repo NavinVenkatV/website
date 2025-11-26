@@ -121,6 +121,7 @@ const Hero = () => {
           <ShootingStars className="z-[-1]" />
           <StarsBackground className="z-[-1]" />
         </motion.div>
+        <div className="text-white cursor-pointer pt-10">FR🇫🇷/ EN🇬🇧</div>
       </div>
 
       <div>
